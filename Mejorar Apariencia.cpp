@@ -48,7 +48,7 @@ void gotoxy(int x,int y){
 
  
 //FUNCION QUE DIBUJA EL CUADRO
-void dibujarCuadro(int x1,int y1,int x2,int y2){
+void dibujarCuadro(int x1,int y1,int x2,int y2){//10 4 10 8
 	int i;
 	
     for (i=x1;i<x2;i++){

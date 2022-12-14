@@ -91,7 +91,7 @@ void agregarCliente(Cliente &c)
 		cout << "\n Ingrese la cedula de identidad del cliente: ";
 		cin.getline(c.CI,40,'\n'); fflush(stdin);//limpiar el buffer para evitar errores
 
-		if (only_numbers(c.CI) || strlen(c.CI) != 8)
+		if (only_numbers(c.CI) || (strlen(c.CI) > 8 || strlen(c.CI) < 7))
 			cout << "\n Ha ingresado un caracter o el numero de cedula es invalido \n";
 
 	}while(only_numbers(c.CI) || strlen(c.CI) != 8);	
@@ -205,6 +205,7 @@ int main()
 					elimnarElemento(frente,fin,cliente);
 				}
 				
+				cout << "\n Se han eliminado todos los clientes correctamente \n\n";
 				break;
 
 			case 'v':

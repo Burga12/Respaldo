@@ -9,7 +9,7 @@ using namespace std;
 struct Nodo
 {
 	int dato;
-	Nodo *siguiente;
+	Nodo *siguiente; 
 };
 
 //Funcion para agregar elementos a la pila

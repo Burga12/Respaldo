@@ -4,6 +4,7 @@
 int   validInt();
 float validFloat();
 bool  hasAChar(char*, char*);
+bool hasACharf(char*, char*);
 
 
 bool hasAChar(char* strStart, char* strEnd) // Para validar que una
